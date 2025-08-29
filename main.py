@@ -16,12 +16,12 @@ app.add_middleware(
 
 # Load all features from split files at startup
 geojson_files = [
-    "resources/split/indore_roads_part1.geojson",
-    "resources/split/indore_roads_part2.geojson", 
-    "resources/split/indore_roads_part3.geojson",
-    "resources/split/indore_roads_part4.geojson",
-    "resources/split/indore_roads_part5.geojson",  # Fixed: part5 before part6
-    "resources/split/indore_roads_part6.geojson"   # Fixed: part6 at end
+    "indore_roads_part1.geojson",
+    "indore_roads_part2.geojson", 
+    "indore_roads_part3.geojson",
+    "indore_roads_part4.geojson",
+    "indore_roads_part5.geojson",  # Fixed: part5 before part6
+    "indore_roads_part6.geojson"   # Fixed: part6 at end
 ]
 
 all_features = []
@@ -199,3 +199,4 @@ def root():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
+
